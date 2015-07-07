@@ -1,7 +1,7 @@
 require(plotrix)
 require(meta)
 
-PSgraphing <- function(estimate, count, name){
+PSgraphing <- function(estimate, count, text, name){
 
 
 	count$PercentExp=count$event.e/count$n.e
@@ -20,7 +20,7 @@ PSgraphing <- function(estimate, count, name){
 	axis(side=2, at=c(0.1,0.2,0.5,1,2,5,10), labels=c(0.1,0.2,0.5,1,2,5,10))
 
 	mtext(side=1, text='Propensity Score Decile', line=2.5)
-	mtext(side=1,text="(total n range: 3237 to 3245 per decile)", line=4)
+	mtext(side=1,text=text, line=4)
 
 	text(x=-2.8,y=10,labels="% events Exp:", adj=0, cex=0.9)
 	text(x=-2.8,y=8,labels="% events Non-Exp:", adj=0, cex=0.9)
