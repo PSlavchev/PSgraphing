@@ -1,6 +1,16 @@
 require(plotrix)
 require(meta)
 
+#' A propensity score graph
+#'
+#' @param pass a string to text to express the n range per decile, name is the graph output's name
+#' @keywords propensity score graph
+#' @export
+#' @examples
+#' data(PSgraphing)
+#' PSgraphing(count=Count_data3, estimate=Estimate_RR, text='(total n range: 3237 to 3245 per decile)', name='myPSgraph.pdf')
+#'
+
 PSgraphing <- function(estimate, count, text, name){
 
 
