@@ -1,5 +1,5 @@
-require(plotrix)
-require(meta)
+library(plotrix)
+library(meta)
 
 PSgraphing <- function(estimate, count, name){
 
