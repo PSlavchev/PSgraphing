@@ -1,7 +1,7 @@
 require(plotrix)
 require(meta)
 
-PSgraphing <- function(estimate, count){
+PSgraphing <- function(estimate, count, name){
 
 
 	count$PercentExp=count$event.e/count$n.e
@@ -58,7 +58,7 @@ PSgraphing <- function(estimate, count){
 	text(x=-2.8, y=c(0.20), labels=expression(paste(I^2," = 68.4%"),sep=""),adj=0,cex=0.9)
 	text(x=-2.8, y=c(0.15), labels=expression(paste(tau^2," = 0.043"),sep=""),adj=0,cex=0.9)
 
-	dev.copy(pdf,file="PS graph v8.pdf", width=10, height=8)
+	dev.copy(pdf,file=name, width=10, height=8)
 	dev.off()
 }
 
