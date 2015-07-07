@@ -7,7 +7,7 @@
 PSgraphing(estimate, count, text, name)
 }
 \arguments{
-\item{pass}{a string to text to express the n range per decile, name is the graph output's name}
+\item{pass}{a string to text to express the n range per decile, name is the graph output s name}
 }
 \description{
 A propensity score graph
