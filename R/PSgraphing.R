@@ -3,7 +3,7 @@ require(meta)
 
 #' A propensity score graph
 #'
-#' @param pass a string to text to express the n range per decile, name is the graph output's name
+#' @param pass a string to text to express the n range per decile, name is the graph output s name
 #' @keywords propensity score graph
 #' @export
 #' @examples
