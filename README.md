@@ -8,7 +8,7 @@ library(devtools)
 install_github('AlexPiche/PSgraphing')
 ```
 
-If you run into trouble installing “devtools” look at this link: https://github.com/hadley/devtools
+If you run into trouble installing “devtools” look at: https://github.com/hadley/devtools
 
 ##Minimal Example
 
