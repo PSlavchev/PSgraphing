@@ -1,5 +1,5 @@
-library(plotrix)
-library(meta)
+require(plotrix)
+require(meta)
 
 PSgraphing <- function(estimate, count, name){
 
@@ -8,12 +8,12 @@ PSgraphing <- function(estimate, count, name){
 	count$PercentCtrl=count$event.c/count$n.c
 	count$Total=count$n.c+count$n.e
 
-	results=metabin(data=count,event.e=event.e, n.e=n.e, event.c=event.c,n.c=n.c)
+	results=meta::metabin(data=count,event.e=event.e, n.e=n.e, event.c=event.c,n.c=n.c)
 	exp(results$TE.random)
 
 
 	par(mar=c(6,5,2,2), bg="transparent")
-	plotCI(estimate$decile, estimate$RR, ui=estimate$RR_upper, li=estimate$RR_lower, log=c("y"),
+	plotrix::plotCI(estimate$decile, estimate$RR, ui=estimate$RR_upper, li=estimate$RR_lower, log=c("y"),
 		   ylog=T,ylab='Risk Ratio', xlab="",axes=F, xlim=c(-3,11), ylim=c(0.05,15),)
 
 	axis(side=1, at=c(1:10),labels=c(1:10))
