@@ -4,7 +4,7 @@ Title: What the package does (short line)
 Version: 1.0
 Date: 2015-07-06
 Author: Dr. Ian Shrier, Dr.Robert Platt, Menglan Pang, Pavel Slavchev and Alexandre Piche
-Maintainer: Who to complain to <alexandre.piche@mail.mcgill.ca>
+Maintainer: <pavel.slavchev@mail.mcgill.ca>,<alexandre.piche@mail.mcgill.ca>
 Description: More about what it does (maybe more than one line)
 License: What license is it under?
 Imports:
